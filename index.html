@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>HOME</h3>
+                <div id="homeScore" class="scoreDisplay">0</div> 
+                <div id="homePanel" class="scoreControl">
+                    <button id="score1H" onclick="increment1()">+1</button>
+                    <button id="score2H" onclick="increment2()">+2</button>
+                    <button id="score3H" onclick="increment3()">+3</button>
+                </div>            
+        </div>
+        <div>
+            <h3>GUEST</h3>
+            <div id="guestScore" class="scoreDisplay">0</div>
+            <div id="guestPanel" class="scoreControl">
+                <button id="score1G" onclick="increment4()">+1</button>
+                <button id="score2G" onclick="increment5()">+2</button>
+                <button id="score3G" onclick="increment6()">+3</button>
+            </div>
+        </div>
+    </div>    
+    <div id="reset">
+        <button onclick="reset()">Reset</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
